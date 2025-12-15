@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Your Name — Personal Site</title>
+    <meta
+      name="description"
+      content="A minimal black-and-white personal website with a portfolio gallery."
+    />
+
+    <!-- Google Fonts: Heading (Futura-like) + Body (refined serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="#top" aria-label="Go to top">
+          <span class="site-brand__name">YOUR NAME</span>
+        </a>
+
+        <!-- Mobile menu button is only shown when JS is enabled (progressive enhancement) -->
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav>
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a class="site-nav__link" href="#about">About</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#work">Work</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="section section--hero" aria-labelledby="hero-title">
+        <div class="container hero">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">YOUR NAME</h1>
+            <p class="hero__subtitle">
+              A short, calm one-liner about what you do. Keep it direct and human.
+            </p>
+
+            <div class="hero__meta" aria-label="Quick facts">
+              <p class="hero__meta-item">Based in: City, Country</p>
+              <p class="hero__meta-item">Focus: Design · Writing · Photography</p>
+            </div>
+
+            <div class="hero__actions">
+              <a class="button" href="#work">View work</a>
+              <a class="button button--ghost" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="about-title">About</h2>
+            <p class="section__lede">
+              A slightly longer bio section. Replace this with your real story when ready.
+            </p>
+          </header>
+
+          <div class="prose">
+            <p>
+              This is a placeholder paragraph where you can describe what you do, what you care
+              about, and what you're currently exploring. Keep it readable: short paragraphs,
+              concrete details, and simple language.
+            </p>
+            <p>
+              You can also add a few "anchors" here: what you've worked on, what you're looking
+              for, or the kinds of collaborations you enjoy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK / PORTFOLIO -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="work-title">Work</h2>
+            <p class="section__lede">
+              A simple gallery layout. Each item includes an image preview and a direct download link.
+            </p>
+          </header>
+
+          <div class="work-grid" role="list">
+            <!-- Work item 1 -->
+            <article class="work-card" role="listitem">
+              <a
+                class="work-card__image-link"
+                href="assets/images/placeholder.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Work Sample 01 in a new tab"
+              >
+                <img
+                  class="work-card__image"
+                  src="assets/images/placeholder.svg"
+                  alt="Placeholder image for Work Sample 01"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-card__body">
+                <h3 class="work-card__title">Work Sample 01</h3>
+                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
+
+                <div class="work-card__actions">
+                  <a
+                    class="button button--small button--ghost"
+                    href="assets/images/placeholder.svg"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="View full-size image for Work Sample 01"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    class="button button--small"
+                    href="assets/images/placeholder.svg"
+                    download="work-sample-01.svg"
+                    aria-label="Download image for Work Sample 01"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Work item 2 -->
+            <article class="work-card" role="listitem">
+              <a
+                class="work-card__image-link"
+                href="assets/images/placeholder.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Work Sample 02 in a new tab"
+              >
+                <img
+                  class="work-card__image"
+                  src="assets/images/placeholder.svg"
+                  alt="Placeholder image for Work Sample 02"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-card__body">
+                <h3 class="work-card__title">Work Sample 02</h3>
+                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
+
+                <div class="work-card__actions">
+                  <a
+                    class="button button--small button--ghost"
+                    href="assets/images/placeholder.svg"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="View full-size image for Work Sample 02"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    class="button button--small"
+                    href="assets/images/placeholder.svg"
+                    download="work-sample-02.svg"
+                    aria-label="Download image for Work Sample 02"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Work item 3 -->
+            <article class="work-card" role="listitem">
+              <a
+                class="work-card__image-link"
+                href="assets/images/placeholder.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Work Sample 03 in a new tab"
+              >
+                <img
+                  class="work-card__image"
+                  src="assets/images/placeholder.svg"
+                  alt="Placeholder image for Work Sample 03"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-card__body">
+                <h3 class="work-card__title">Work Sample 03</h3>
+                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
+
+                <div class="work-card__actions">
+                  <a
+                    class="button button--small button--ghost"
+                    href="assets/images/placeholder.svg"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="View full-size image for Work Sample 03"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    class="button button--small"
+                    href="assets/images/placeholder.svg"
+                    download="work-sample-03.svg"
+                    aria-label="Download image for Work Sample 03"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Work item 4 -->
+            <article class="work-card" role="listitem">
+              <a
+                class="work-card__image-link"
+                href="assets/images/placeholder.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Work Sample 04 in a new tab"
+              >
+                <img
+                  class="work-card__image"
+                  src="assets/images/placeholder.svg"
+                  alt="Placeholder image for Work Sample 04"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-card__body">
+                <h3 class="work-card__title">Work Sample 04</h3>
+                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
+
+                <div class="work-card__actions">
+                  <a
+                    class="button button--small button--ghost"
+                    href="assets/images/placeholder.svg"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="View full-size image for Work Sample 04"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    class="button button--small"
+                    href="assets/images/placeholder.svg"
+                    download="work-sample-04.svg"
+                    aria-label="Download image for Work Sample 04"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Work item 5 -->
+            <article class="work-card" role="listitem">
+              <a
+                class="work-card__image-link"
+                href="assets/images/placeholder.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Work Sample 05 in a new tab"
+              >
+                <img
+                  class="work-card__image"
+                  src="assets/images/placeholder.svg"
+                  alt="Placeholder image for Work Sample 05"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-card__body">
+                <h3 class="work-card__title">Work Sample 05</h3>
+                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
+
+                <div class="work-card__actions">
+                  <a
+                    class="button button--small button--ghost"
+                    href="assets/images/placeholder.svg"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="View full-size image for Work Sample 05"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    class="button button--small"
+                    href="assets/images/placeholder.svg"
+                    download="work-sample-05.svg"
+                    aria-label="Download image for Work Sample 05"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Work item 6 -->
+            <article class="work-card" role="listitem">
+              <a
+                class="work-card__image-link"
+                href="assets/images/placeholder.svg"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Work Sample 06 in a new tab"
+              >
+                <img
+                  class="work-card__image"
+                  src="assets/images/placeholder.svg"
+                  alt="Placeholder image for Work Sample 06"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-card__body">
+                <h3 class="work-card__title">Work Sample 06</h3>
+                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
+
+                <div class="work-card__actions">
+                  <a
+                    class="button button--small button--ghost"
+                    href="assets/images/placeholder.svg"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="View full-size image for Work Sample 06"
+                  >
+                    View
+                  </a>
+
+                  <a
+                    class="button button--small"
+                    href="assets/images/placeholder.svg"
+                    download="work-sample-06.svg"
+                    aria-label="Download image for Work Sample 06"
+                  >
+                    Download
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="contact-title">Contact</h2>
+            <p class="section__lede">
+              Simple contact details plus an optional form placeholder you can wire up later.
+            </p>
+          </header>
+
+          <div class="contact">
+            <div class="contact__details">
+              <h3 class="contact__title">Say hello</h3>
+
+              <address class="contact__address">
+                <p>
+                  Email:
+                  <a href="mailto:you@example.com">you@example.com</a>
+                </p>
+                <p>
+                  Location:
+                  <span>City, Country</span>
+                </p>
+              </address>
+
+              <ul class="social" aria-label="Social links">
+                <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
+                <li class="social__item"><a class="social__link" href="#">GitHub</a></li>
+                <li class="social__item"><a class="social__link" href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+
+            <form class="contact-form" action="#" method="post" aria-label="Contact form (placeholder)">
+              <div class="field">
+                <label class="field__label" for="name">Name</label>
+                <input class="field__input" id="name" name="name" type="text" autocomplete="name" />
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="email">Email</label>
+                <input
+                  class="field__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="message">Message</label>
+                <textarea class="field__input field__input--textarea" id="message" name="message"></textarea>
+              </div>
+
+              <button class="button" type="submit">Send message</button>
+
+              <p class="contact-form__note">
+                This form is a placeholder on a static site until you connect it to a form service.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container site-footer__inner">
+        <p class="site-footer__text">
+          © <span data-year></span> YOUR NAME
+        </p>
+        <a class="site-footer__link" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
