@@ -4,452 +4,348 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Your Name — Personal Site</title>
-    <meta
-      name="description"
-      content="A minimal black-and-white personal website with a portfolio gallery."
-    />
+    <title>~*~WeLcOmE tO mY sItE~*~ APLASTICBAGGY's REALM</title>
+    <meta name="description" content="WELCOME TO THE INFORMATION SUPERHIGHWAY!! This is my corner of the web. ENTER IF YOU DARE..." />
 
-    <!-- Google Fonts: Heading (Futura-like) + Body (refined serif) -->
+    <!-- Comic Sans + more unhinged fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Press+Start+2P&family=Bungee+Shade&family=Creepster&family=Silkscreen&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Skip link for keyboard users -->
-    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- SPARKLE CONTAINER -->
+    <div id="sparkle-container"></div>
+
+    <!-- CURSOR TRAIL CONTAINER -->
+    <div id="cursor-trail"></div>
+
+    <!-- FLOATING DECORATIONS -->
+    <div class="floating-decor decor-1">*</div>
+    <div class="floating-decor decor-2">~</div>
+    <div class="floating-decor decor-3">*</div>
+    <div class="floating-decor decor-4">@</div>
+    <div class="floating-decor decor-5">#</div>
+
+    <!-- TOP MARQUEE -->
+    <div class="marquee-container top-marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
+        <span class="rainbow-text">*** WELCOME TO MY SITE ***</span>
+        YOU ARE VISITOR #<span id="visitor-count">????</span>
+        <span class="blink">!!!</span>
+        <span class="rainbow-text">*** BEST VIEWED AT 800x600 ***</span>
+        NETSCAPE NAVIGATOR RECOMMENDED
+        <span class="blink">!!!</span>
+        <span class="glitter">SIGN MY GUESTBOOK</span>
+        *** UNDER CONSTRUCTION FOREVER ***
+      </marquee>
+    </div>
 
     <header class="site-header" id="top">
       <div class="container site-header__inner">
-        <a class="site-brand" href="#top" aria-label="Go to top">
-          <span class="site-brand__name">YOUR NAME</span>
+        <a class="site-brand" href="#top">
+          <span class="site-brand__name glitch" data-text="APLASTICBAGGY">APLASTICBAGGY</span>
+          <span class="site-brand__subtitle">~*~ my digital realm ~*~</span>
         </a>
 
-        <!-- Mobile menu button is only shown when JS is enabled (progressive enhancement) -->
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-controls="site-nav"
-          aria-expanded="false"
-          data-nav-toggle
-        >
-          <span class="nav-toggle__label">Menu</span>
-        </button>
-
-        <nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav>
+        <nav class="site-nav" id="site-nav">
           <ul class="site-nav__list">
-            <li class="site-nav__item"><a class="site-nav__link" href="#about">About</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="#work">Work</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="#contact">Contact</a></li>
+            <li class="site-nav__item"><a class="site-nav__link wobble" href="#about">[ABOUT ME]</a></li>
+            <li class="site-nav__item"><a class="site-nav__link wobble" href="#shrine">[SHRINE]</a></li>
+            <li class="site-nav__item"><a class="site-nav__link wobble" href="#guestbook">[GUESTBOOK]</a></li>
+            <li class="site-nav__item"><a class="site-nav__link wobble" href="#links">[LINKS]</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <!-- HERO -->
+      <!-- HERO SECTION -->
       <section class="section section--hero" aria-labelledby="hero-title">
         <div class="container hero">
           <div class="hero__content">
-            <h1 class="hero__title" id="hero-title">YOUR NAME</h1>
-            <p class="hero__subtitle">
-              A short, calm one-liner about what you do. Keep it direct and human.
-            </p>
-
-            <div class="hero__meta" aria-label="Quick facts">
-              <p class="hero__meta-item">Based in: City, Country</p>
-              <p class="hero__meta-item">Focus: Design · Writing · Photography</p>
+            <div class="welcome-box">
+              <h1 class="hero__title glitch-intense" id="hero-title" data-text="WELCOME!!">
+                WELCOME!!
+              </h1>
+              <div class="hero__gif-row">
+                <span class="spin">*</span>
+                <span class="bounce-text">TO</span>
+                <span class="spin">*</span>
+                <span class="bounce-text">MY</span>
+                <span class="spin">*</span>
+                <span class="bounce-text">PAGE</span>
+                <span class="spin">*</span>
+              </div>
             </div>
 
-            <div class="hero__actions">
-              <a class="button" href="#work">View work</a>
-              <a class="button button--ghost" href="#contact">Contact</a>
+            <div class="hero__info-box pixel-border">
+              <p class="typewriter">Hello internet traveler!! My name is APLASTICBAGGY and this is my corner of the WORLD WIDE WEB!!</p>
+              <p class="rainbow-text">I like: coding, music, weird stuff, the old internet, cats, and CHAOS</p>
+              <p><span class="blink">!!!</span> Thanks 4 stopping by <span class="blink">!!!</span></p>
+            </div>
+
+            <div class="hero__badges">
+              <div class="badge pixel-border">NOW PLAYING: your favorite song.mp3</div>
+              <div class="badge pixel-border shake">MOOD: chaotic neutral</div>
+              <div class="badge pixel-border">STATUS: <span class="blink">ONLINE</span></div>
+            </div>
+
+            <div class="construction-zone">
+              <span class="construction-stripe"></span>
+              <span class="blink">!!! UNDER ETERNAL CONSTRUCTION !!!</span>
+              <span class="construction-stripe"></span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ABOUT -->
+      <!-- ABOUT SECTION -->
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="container">
           <header class="section__header">
-            <h2 class="section__title" id="about-title">About</h2>
-            <p class="section__lede">
-              A slightly longer bio section. Replace this with your real story when ready.
-            </p>
+            <h2 class="section__title rainbow-text" id="about-title">
+              ~*~ ABOUT ME ~*~
+            </h2>
           </header>
 
-          <div class="prose">
-            <p>
-              This is a placeholder paragraph where you can describe what you do, what you care
-              about, and what you're currently exploring. Keep it readable: short paragraphs,
-              concrete details, and simple language.
-            </p>
-            <p>
-              You can also add a few "anchors" here: what you've worked on, what you're looking
-              for, or the kinds of collaborations you enjoy.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- WORK / PORTFOLIO -->
-      <section class="section" id="work" aria-labelledby="work-title">
-        <div class="container">
-          <header class="section__header">
-            <h2 class="section__title" id="work-title">Work</h2>
-            <p class="section__lede">
-              A simple gallery layout. Each item includes an image preview and a direct download link.
-            </p>
-          </header>
-
-          <div class="work-grid" role="list">
-            <!-- Work item 1 -->
-            <article class="work-card" role="listitem">
-              <a
-                class="work-card__image-link"
-                href="assets/images/placeholder.svg"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open Work Sample 01 in a new tab"
-              >
-                <img
-                  class="work-card__image"
-                  src="assets/images/placeholder.svg"
-                  alt="Placeholder image for Work Sample 01"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="work-card__body">
-                <h3 class="work-card__title">Work Sample 01</h3>
-                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
-
-                <div class="work-card__actions">
-                  <a
-                    class="button button--small button--ghost"
-                    href="assets/images/placeholder.svg"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="View full-size image for Work Sample 01"
-                  >
-                    View
-                  </a>
-
-                  <a
-                    class="button button--small"
-                    href="assets/images/placeholder.svg"
-                    download="work-sample-01.svg"
-                    aria-label="Download image for Work Sample 01"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Work item 2 -->
-            <article class="work-card" role="listitem">
-              <a
-                class="work-card__image-link"
-                href="assets/images/placeholder.svg"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open Work Sample 02 in a new tab"
-              >
-                <img
-                  class="work-card__image"
-                  src="assets/images/placeholder.svg"
-                  alt="Placeholder image for Work Sample 02"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="work-card__body">
-                <h3 class="work-card__title">Work Sample 02</h3>
-                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
-
-                <div class="work-card__actions">
-                  <a
-                    class="button button--small button--ghost"
-                    href="assets/images/placeholder.svg"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="View full-size image for Work Sample 02"
-                  >
-                    View
-                  </a>
-
-                  <a
-                    class="button button--small"
-                    href="assets/images/placeholder.svg"
-                    download="work-sample-02.svg"
-                    aria-label="Download image for Work Sample 02"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Work item 3 -->
-            <article class="work-card" role="listitem">
-              <a
-                class="work-card__image-link"
-                href="assets/images/placeholder.svg"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open Work Sample 03 in a new tab"
-              >
-                <img
-                  class="work-card__image"
-                  src="assets/images/placeholder.svg"
-                  alt="Placeholder image for Work Sample 03"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="work-card__body">
-                <h3 class="work-card__title">Work Sample 03</h3>
-                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
-
-                <div class="work-card__actions">
-                  <a
-                    class="button button--small button--ghost"
-                    href="assets/images/placeholder.svg"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="View full-size image for Work Sample 03"
-                  >
-                    View
-                  </a>
-
-                  <a
-                    class="button button--small"
-                    href="assets/images/placeholder.svg"
-                    download="work-sample-03.svg"
-                    aria-label="Download image for Work Sample 03"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Work item 4 -->
-            <article class="work-card" role="listitem">
-              <a
-                class="work-card__image-link"
-                href="assets/images/placeholder.svg"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open Work Sample 04 in a new tab"
-              >
-                <img
-                  class="work-card__image"
-                  src="assets/images/placeholder.svg"
-                  alt="Placeholder image for Work Sample 04"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="work-card__body">
-                <h3 class="work-card__title">Work Sample 04</h3>
-                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
-
-                <div class="work-card__actions">
-                  <a
-                    class="button button--small button--ghost"
-                    href="assets/images/placeholder.svg"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="View full-size image for Work Sample 04"
-                  >
-                    View
-                  </a>
-
-                  <a
-                    class="button button--small"
-                    href="assets/images/placeholder.svg"
-                    download="work-sample-04.svg"
-                    aria-label="Download image for Work Sample 04"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Work item 5 -->
-            <article class="work-card" role="listitem">
-              <a
-                class="work-card__image-link"
-                href="assets/images/placeholder.svg"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open Work Sample 05 in a new tab"
-              >
-                <img
-                  class="work-card__image"
-                  src="assets/images/placeholder.svg"
-                  alt="Placeholder image for Work Sample 05"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="work-card__body">
-                <h3 class="work-card__title">Work Sample 05</h3>
-                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
-
-                <div class="work-card__actions">
-                  <a
-                    class="button button--small button--ghost"
-                    href="assets/images/placeholder.svg"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="View full-size image for Work Sample 05"
-                  >
-                    View
-                  </a>
-
-                  <a
-                    class="button button--small"
-                    href="assets/images/placeholder.svg"
-                    download="work-sample-05.svg"
-                    aria-label="Download image for Work Sample 05"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Work item 6 -->
-            <article class="work-card" role="listitem">
-              <a
-                class="work-card__image-link"
-                href="assets/images/placeholder.svg"
-                target="_blank"
-                rel="noopener"
-                aria-label="Open Work Sample 06 in a new tab"
-              >
-                <img
-                  class="work-card__image"
-                  src="assets/images/placeholder.svg"
-                  alt="Placeholder image for Work Sample 06"
-                  loading="lazy"
-                />
-              </a>
-
-              <div class="work-card__body">
-                <h3 class="work-card__title">Work Sample 06</h3>
-                <p class="work-card__caption">Short caption describing the piece in one sentence.</p>
-
-                <div class="work-card__actions">
-                  <a
-                    class="button button--small button--ghost"
-                    href="assets/images/placeholder.svg"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="View full-size image for Work Sample 06"
-                  >
-                    View
-                  </a>
-
-                  <a
-                    class="button button--small"
-                    href="assets/images/placeholder.svg"
-                    download="work-sample-06.svg"
-                    aria-label="Download image for Work Sample 06"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <div class="container">
-          <header class="section__header">
-            <h2 class="section__title" id="contact-title">Contact</h2>
-            <p class="section__lede">
-              Simple contact details plus an optional form placeholder you can wire up later.
-            </p>
-          </header>
-
-          <div class="contact">
-            <div class="contact__details">
-              <h3 class="contact__title">Say hello</h3>
-
-              <address class="contact__address">
-                <p>
-                  Email:
-                  <a href="mailto:you@example.com">you@example.com</a>
-                </p>
-                <p>
-                  Location:
-                  <span>City, Country</span>
-                </p>
-              </address>
-
-              <ul class="social" aria-label="Social links">
-                <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
-                <li class="social__item"><a class="social__link" href="#">GitHub</a></li>
-                <li class="social__item"><a class="social__link" href="#">LinkedIn</a></li>
+          <div class="about-container">
+            <div class="about-card pixel-border">
+              <h3 class="creepy-text">WHO AM I???</h3>
+              <ul class="weird-list">
+                <li><span class="bullet">*</span> Just a plastic baggy floating through the digital void</li>
+                <li><span class="bullet">*</span> Professional chaos goblin</li>
+                <li><span class="bullet">*</span> Collector of weird internet things</li>
+                <li><span class="bullet">*</span> Definitely not a robot (OR AM I??)</li>
+                <li><span class="bullet">*</span> <span class="glitter">Sparkle enthusiast</span></li>
               </ul>
             </div>
 
-            <form class="contact-form" action="#" method="post" aria-label="Contact form (placeholder)">
-              <div class="field">
-                <label class="field__label" for="name">Name</label>
-                <input class="field__input" id="name" name="name" type="text" autocomplete="name" />
+            <div class="about-card pixel-border">
+              <h3 class="creepy-text">FUN FACTS</h3>
+              <ul class="weird-list">
+                <li><span class="bullet">*</span> This site has exactly <span class="blink">???</span> colors</li>
+                <li><span class="bullet">*</span> I learned HTML in the dark ages</li>
+                <li><span class="bullet">*</span> My favorite tag is <code>&lt;marquee&gt;</code></li>
+                <li><span class="bullet">*</span> I believe in web 1.0 supremacy</li>
+                <li><span class="bullet">*</span> <span class="rainbow-text">RAINBOWS ARE COOL</span></li>
+              </ul>
+            </div>
+
+            <div class="about-card pixel-border stats-card">
+              <h3 class="creepy-text">VITAL STATS</h3>
+              <div class="stat-bars">
+                <div class="stat-row">
+                  <span>CHAOS:</span>
+                  <div class="stat-bar"><div class="stat-fill chaos-fill"></div></div>
+                  <span>99%</span>
+                </div>
+                <div class="stat-row">
+                  <span>VIBES:</span>
+                  <div class="stat-bar"><div class="stat-fill vibes-fill"></div></div>
+                  <span>IMMACULATE</span>
+                </div>
+                <div class="stat-row">
+                  <span>SANITY:</span>
+                  <div class="stat-bar"><div class="stat-fill sanity-fill"></div></div>
+                  <span>???</span>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div class="field">
-                <label class="field__label" for="email">Email</label>
-                <input
-                  class="field__input"
-                  id="email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                />
+      <!-- SHRINE SECTION -->
+      <section class="section shrine-section" id="shrine" aria-labelledby="shrine-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="shrine-title">
+              <span class="fire-text">MY SHRINE</span>
+            </h2>
+            <p class="section__lede glitter">~*~ things i think are neat ~*~</p>
+          </header>
+
+          <div class="shrine-grid">
+            <div class="shrine-item pixel-border hover-grow">
+              <div class="shrine-icon spin-slow">*</div>
+              <h3>THE OLD WEB</h3>
+              <p>when websites had PERSONALITY</p>
+            </div>
+            <div class="shrine-item pixel-border hover-grow">
+              <div class="shrine-icon float">~</div>
+              <h3>WEIRD MUSIC</h3>
+              <p>the weirder the better tbh</p>
+            </div>
+            <div class="shrine-item pixel-border hover-grow">
+              <div class="shrine-icon shake">@</div>
+              <h3>CHAOS ENERGY</h3>
+              <p>entropy is beautiful actually</p>
+            </div>
+            <div class="shrine-item pixel-border hover-grow">
+              <div class="shrine-icon bounce">#</div>
+              <h3>NEON COLORS</h3>
+              <p>the brighter the better</p>
+            </div>
+            <div class="shrine-item pixel-border hover-grow">
+              <div class="shrine-icon wobble">%</div>
+              <h3>PIXEL ART</h3>
+              <p>chunky pixels are aesthetic</p>
+            </div>
+            <div class="shrine-item pixel-border hover-grow">
+              <div class="shrine-icon spin-slow">&</div>
+              <h3>MYSTERY</h3>
+              <p>what secrets lie within???</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GUESTBOOK SECTION -->
+      <section class="section guestbook-section" id="guestbook" aria-labelledby="guestbook-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title rainbow-text" id="guestbook-title">
+              SIGN MY GUESTBOOK!!!
+            </h2>
+            <p class="section__lede blink">pls leave a message ^_^</p>
+          </header>
+
+          <div class="guestbook-container">
+            <div class="guestbook-entries pixel-border">
+              <div class="guestbook-entry">
+                <span class="entry-name rainbow-text">CoolDude99:</span>
+                <span class="entry-msg">awesome site!!! love the vibes XD</span>
+                <span class="entry-date">12/25/1999</span>
               </div>
-
-              <div class="field">
-                <label class="field__label" for="message">Message</label>
-                <textarea class="field__input field__input--textarea" id="message" name="message"></textarea>
+              <div class="guestbook-entry">
+                <span class="entry-name glitter">~*SparkleQueen*~:</span>
+                <span class="entry-msg">OMG this is so cool!!! adding to my webring!!</span>
+                <span class="entry-date">01/01/2000</span>
               </div>
+              <div class="guestbook-entry">
+                <span class="entry-name">Anonymous:</span>
+                <span class="entry-msg">i was here :)</span>
+                <span class="entry-date">??/??/????</span>
+              </div>
+              <div class="guestbook-entry">
+                <span class="entry-name fire-text">HACKERMAN:</span>
+                <span class="entry-msg">nice HTML skills... i see u</span>
+                <span class="entry-date">ERROR</span>
+              </div>
+            </div>
 
-              <button class="button" type="submit">Send message</button>
-
-              <p class="contact-form__note">
-                This form is a placeholder on a static site until you connect it to a form service.
-              </p>
+            <form class="guestbook-form pixel-border" onsubmit="return false;">
+              <h3 class="creepy-text">LEAVE YOUR MARK</h3>
+              <div class="form-field">
+                <label>YOUR NAME:</label>
+                <input type="text" placeholder="~*~CoolName123~*~" class="pixel-input" />
+              </div>
+              <div class="form-field">
+                <label>YOUR MESSAGE:</label>
+                <textarea placeholder="say something nice!! or weird!! or both!!" class="pixel-input"></textarea>
+              </div>
+              <button type="submit" class="pixel-button rainbow-bg">
+                <span class="blink">SUBMIT!!!</span>
+              </button>
+              <p class="form-note">(this doesn't actually work lol it's just for vibes)</p>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- LINKS SECTION -->
+      <section class="section links-section" id="links" aria-labelledby="links-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title fire-text" id="links-title">
+              ~*~ COOL LINKS ~*~
+            </h2>
+          </header>
+
+          <div class="links-container">
+            <div class="link-category pixel-border">
+              <h3 class="rainbow-text">FRIENDS</h3>
+              <ul class="link-list">
+                <li><a href="#" class="hover-rainbow">your site could be here!</a></li>
+                <li><a href="#" class="hover-rainbow">mystery link #1</a></li>
+                <li><a href="#" class="hover-rainbow">mystery link #2</a></li>
+              </ul>
+            </div>
+
+            <div class="link-category pixel-border">
+              <h3 class="rainbow-text">RESOURCES</h3>
+              <ul class="link-list">
+                <li><a href="https://neocities.org" class="hover-rainbow" target="_blank">Neocities</a></li>
+                <li><a href="#" class="hover-rainbow">Free Cursors!!!</a></li>
+                <li><a href="#" class="hover-rainbow">Cool Fonts</a></li>
+              </ul>
+            </div>
+
+            <div class="link-category pixel-border webring-box">
+              <h3 class="glitter">WEBRING</h3>
+              <div class="webring-nav">
+                <a href="#" class="webring-btn pixel-button">&lt;&lt; PREV</a>
+                <span class="webring-name">CHAOS WEBRING</span>
+                <a href="#" class="webring-btn pixel-button">NEXT &gt;&gt;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons-collection pixel-border">
+            <h3 class="rainbow-text">88x31 BUTTONS</h3>
+            <div class="button-grid">
+              <div class="fake-button pixel-border">NEOCITIES</div>
+              <div class="fake-button pixel-border">MADE WITH CHAOS</div>
+              <div class="fake-button pixel-border">WEB 1.0</div>
+              <div class="fake-button pixel-border">NO AI ART</div>
+              <div class="fake-button pixel-border">BEST VIEWED DRUNK</div>
+              <div class="fake-button pixel-border">I <3 CSS</div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer" aria-label="Footer">
+    <!-- BOTTOM MARQUEE -->
+    <div class="marquee-container bottom-marquee">
+      <marquee behavior="scroll" direction="right" scrollamount="5">
+        <span class="glitter">thanks 4 visiting!!!</span>
+        * come back soon *
+        <span class="rainbow-text">LONG LIVE THE OLD WEB</span>
+        * made with love and chaos *
+        <span class="blink">!!!</span>
+        <span class="fire-text">STAY WEIRD</span>
+        <span class="blink">!!!</span>
+      </marquee>
+    </div>
+
+    <footer class="site-footer">
       <div class="container site-footer__inner">
+        <div class="footer-art">
+          <pre class="ascii-art">
+   /\_/\
+  ( o.o )
+   > ^ <
+  /|   |\
+ (_|   |_)
+          </pre>
+        </div>
         <p class="site-footer__text">
-          © <span data-year></span> YOUR NAME
+          <span class="rainbow-text">APLASTICBAGGY</span> (c) <span data-year></span>
+          <br>
+          <span class="blink">*</span> MADE WITH MS PAINT AND DREAMS <span class="blink">*</span>
         </p>
-        <a class="site-footer__link" href="#top">Back to top</a>
+        <a class="site-footer__link hover-rainbow" href="#top">[BACK TO TOP]</a>
       </div>
     </footer>
+
+    <!-- SECRET EASTER EGG -->
+    <div id="secret-message" class="secret-hidden">
+      <p class="rainbow-text">YOU FOUND THE SECRET!!! CONGRATS!!! :D</p>
+    </div>
 
     <script src="script.js"></script>
   </body>
